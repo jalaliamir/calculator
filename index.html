@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/javascript.js"></script>
+    <title>calculater</title>
+</head>
+
+<body onload="Time()">
+    <div class="main">
+        <div class="icons-top">
+            <div class="left"><span id="Time">11:11</span></div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="result">
+            <div class="history">
+                <p class="upper-value" id="txtResult1"></p>
+            </div>
+            <div class="output">
+                <p class="lower-value" id="txtResult">0</p>
+            </div>
+        </div>
+        <div id="keyboard">
+            <div class="group">
+                <div class="top-section">
+                    <button class="operator" id="claer" onclick="Cleartxt()">C</button>
+                    <button class="operator" id="backspace" onclick="show()">
+                        <i class="fas fa-backspace"></i>
+                    </button>
+                    <button class="operator" value="%" id="%" onclick="operator(this)">%</button>
+                </div>
+                <div class="middle-section">
+                    <div>
+                        <button class="number" value="7" onclick="btnNumbers(this)">7</button>
+                        <button class="number" value="8" onclick="btnNumbers(this)">8</button>
+                        <button class="number" value="9" onclick="btnNumbers(this)">9</button>
+                    </div>
+                    <div>
+                        <button class="number" value="4" onclick="btnNumbers(this)">4</button>
+                        <button class="number" value="5" onclick="btnNumbers(this)">5</button>
+                        <button class="number" value="6" onclick="btnNumbers(this)">6</button>
+                    </div>
+                    <div>
+                        <button class="number" value="1" onclick="btnNumbers(this)">1</button>
+                        <button class="number" value="2" onclick="btnNumbers(this)">2</button>
+                        <button class="number" value="3" onclick="btnNumbers(this)">3</button>
+                    </div>
+                    <div>
+                        <button class="number" id="dbzero" value="00" onclick="btnNumbers(this)">00</button>
+                        <button class="number" value="0" onclick="btnNumbers(this)">0</button>
+                        <button class="number" value="." onclick="btnNumbers(this)">.</button>
+                    </div>
+                </div>
+            </div>
+            <div class="side-section">
+                <button class="operator" value="/" id="/" onclick="operator(this)">/</button>
+                <button class="operator" value="*" id="*" onclick="operator(this)">*</button>
+                <button class="operator" value="-" id="-" onclick="operator(this)">-</button>
+                <button class="operator" value="+" id="+" onclick="operator(this)">+</button>
+                <button class="operator squal" value="=" id="=" onclick="equal(this)">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
